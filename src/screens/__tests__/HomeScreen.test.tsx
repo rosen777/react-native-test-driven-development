@@ -1,4 +1,4 @@
-import {render} from '@testing-library/react-native';
+import {render, cleanup} from '@testing-library/react-native';
 import React from 'react';
 import HomeScreen from '../HomeScreen';
 import WeatherCurrent from '../../components/WeatherCurrent';
@@ -30,6 +30,7 @@ describe('HomeScreen', () => {
 
     afterEach(() => {
       jest.useRealTimers();
+      cleanup;
     });
 
     test('Should contain current date', () => {
