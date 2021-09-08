@@ -1,7 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
-import {fireEvent, render, waitFor} from '@testing-library/react-native';
+import {act, fireEvent, render, waitFor} from '@testing-library/react-native';
 import React, {useState} from 'react';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {Colors} from '../../../constants';
 import LocationService from '../../services/LocationService';
 import WeatherCurrent from '../WeatherCurrent';
 
